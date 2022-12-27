@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>форма</title>
+    <link rel="stylesheet" href="cindex.css">
+</head>
+
+<body>
+    <form>
+
+        <h1 title="форма регистрации">Регистрация</h1>
+        <div class="groap">
+            <label for=""> Имя пользователя</label>
+            <input name="username" type="text">
+        </div>
+        <div class="groap">
+            <label for="">Пароль</label>
+            <input type="password" name="password" class="password">
+        </div>
+
+        <div class="groap">
+            <label for="">Повторите пароль</label>
+            <input type="password" name="repeadPassword" class="checkpassword">
+        </div>
+
+        <div class="groap">
+            <label for="">адрес электронной почты</label>
+            <input type="email" name="email">
+        </div>
+        <div class="group">
+            <input type="checkbox" name="agree"> согласен на обработку личных данных
+        </div>
+        <div class="groap">
+            <button type="submit">Регистрация</button>
+        </div>
+        <div class="error"></div>
+    </form>
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
