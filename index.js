@@ -2,11 +2,12 @@ let form = document.querySelector("form");
 let error = document.querySelector(".error");
 
 
+
 form.addEventListener("submit", function (event) {
     event.preventDefault();
     checkTextInput('input[name="username"]','имя');
     checkTextInput('input[name="email"]','почту');
-    checkpassword()
+    checkpassword();
 
 
     let checkbox = document.querySelector('input[name="agree"]');
@@ -26,13 +27,14 @@ if (input.value.length > 0) {
 function checkpassword() {
     let password = document.querySelector(".password");
     let repeadPassword = document.querySelector(".checkpassword");
-    if(password.value !== repeadPassword.value){
-    
+    if(password.value != repeadPassword.value) {
+   
 }else{
     error.textContent += "Пароли не совпадают,";
 }
 }
 
+ 
 
 
 

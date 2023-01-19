@@ -10,13 +10,13 @@
 </head>
 
 <body>
-    <form>
+    <form novalidate>
 
         <h1 title="форма регистрации">Регистрация</h1>
         <div class="groap">
             <label for=""> Имя пользователя</label>
-            <input name="username" type="text">
-        </div>
+            <input name="username" type="text" class="name"> 
+        </div> 
         <div class="groap">
             <label for="">Пароль</label>
             <input type="password" name="password" class="password">
@@ -29,13 +29,13 @@
 
         <div class="groap">
             <label for="">адрес электронной почты</label>
-            <input type="email" name="email">
+            <input type="email" name="email" class="email">
         </div>
         <div class="group">
             <input type="checkbox" name="agree"> согласен на обработку личных данных
         </div>
         <div class="groap">
-            <button type="submit">Регистрация</button>
+            <button type="button">Регистрация</button>
         </div>
         <div class="error"></div>
     </form>
